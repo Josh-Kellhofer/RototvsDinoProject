@@ -1,9 +1,13 @@
+from weapon import Weapon
+
 class Robot:
 
-  def __init__(self, name, health, weapon):
+  def __init__(self, name):
     self.name = name
-    self.health = health
-    self.weapon = weapon
+    self.health = 60
+    self.weapon = Weapon("laser blade", 30)
 
-    def attack(self, dinosaur):
+  def attack(self, dinosaur):
       pass
+
+  
