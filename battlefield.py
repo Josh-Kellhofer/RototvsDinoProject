@@ -7,15 +7,18 @@ class Battlefield:
 
   def __init__(self):
 
-    # def run_game(self):
+    def run_game(self):
         display_welcome
         battle
 
-def display_welcome(self):
+    def display_welcome(self):
       print("WELCOME TO THE BATTLE OF BEAST VS. MACHINE\n")
       print(" Battling for dominance over the universe")
       print(" are 3 dinosaurs and 3 robots. Who will win") 
       print("    No one knows. Let's find out!") 
+
+dinosaur = random.choice(Herd.self.list)
+robot = random.choice(Fleet.self.list)
 
 
 def battle(self):
@@ -29,29 +32,26 @@ def battle(self):
       
       press_one = input(" ")
       if press_one == 1:
-        Dinosaur.attack
+        dinosaur.attack
       else:
         print("Please press 1 to attack")
-      if dinosaur health <= 0:
-        Dinosaur.self.list.remove(dinosaur)
-        print(f"{dinosaur} has been defeated!")
+      if robot.self.health <= 0:
+        Fleet.self.list.remove(robot)
+        print(f"{robot} has been defeated!")
 
       robot_turn
       show_robot_opponent_options
       
       press_one = input(" ")
       if press_one == 1:
-        Robot.attack
+        robot.attack
       else:
         print("Please press 1 to attack")
-      if robot health <= 0:
-        Robot.self.list.remove(robot)
-        print(f"{robot} has been defeated!")
+      if dinosaur.self.health <= 0:
+        Herd.self.list.remove(dinosaur)
+        print(f"{dinosaur} has been defeated!")
 
     
-        dinosaur = random.choice(Herd.self.list)
-        robot = random.choice(Fleet.self.list)
-
         def dino_turn(self, dinosaur):
             self.dinosaur = dinosaur
         print("It is now {dinosaur}'s turn to go")

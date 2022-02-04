@@ -12,3 +12,5 @@ class Fleet:
 Bob = Robot("Bob", 120)
 Mech_Godzilla = Robot("Mecha-Godzilla", 75)
 Terminator = Robot("Terminator", 90)
+
+print(f"(self.list)")
