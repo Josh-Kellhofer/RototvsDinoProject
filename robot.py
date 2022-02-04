@@ -9,7 +9,7 @@ class Robot:
 
   def attack(self, dinosaur):
     self.dinosaur = dinosaur
-    print("You hit {dinosaur} for 25 damage with your stapler")
+    print(f"You hit {dinosaur} for 25 damage with your stapler")
     dinosaur.health -= 25
 
   
