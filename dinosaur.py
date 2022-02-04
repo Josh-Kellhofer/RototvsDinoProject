@@ -1,10 +1,12 @@
 class Dinosaur:
 
-  def __init__(self, name, attack_power):
+  def __init__(self, name, health):
     self.name = name
-    self.attack_power = attack_power
-    self.health = 50
+    self.attack_power = 25
+    self.health = health
     
 
   def attack(self, robot):
-      pass
+    self.robot = robot
+    print("You hit {robot} for 25 damage with your claw")
+    robot.health -= 25
