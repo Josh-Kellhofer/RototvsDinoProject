@@ -17,12 +17,12 @@ class Battlefield:
   def display_welcome(self):
       print("WELCOME TO THE BATTLE OF BEAST VS. MACHINE\n")
       print(" Battling for dominance over the universe")
-      print(" are 3 dinosaurs and 3 robots. Who will win") 
+      print(" are 3 dinosaurs and 3 robots. Who will win?") 
       print("    No one knows. Let's find out!") 
 
   def battle(self):
       
-      print(f"Your robots remaining: {self.fleet.fleet_list}")
+      print(f"Your robots remaining: {self.fleet.fleet_list}\n")
       print(f"Your dinosaur's remaining: {self.herd.herd_list}")
       
       print("Robots are slow. Dinosaurs attack first!\n")
@@ -37,19 +37,20 @@ class Battlefield:
         dinosaur.attack(robot)
       else:
         print("Please press 1 to attack")
-      if robot.self.health <= 0:
+          
+      if robot.health <= 0:
         self.fleet.fleet_list.remove(robot)
         print(f"{robot} has been defeated!")
 
       self.robot_turn()
-      self.show_robot_opponent_options()
-      
+      self.show_robot_opponent_options() 
+
       press_one = input(" ")
       if press_one == 1:
         robot.attack(dinosaur)
       else:
         print("Please press 1 to attack")
-      if dinosaur.self.health <= 0:
+      if dinosaur.health <= 0:
         self.herd.herd_list.remove(dinosaur)
         print(f"{dinosaur} has been defeated!")
 
