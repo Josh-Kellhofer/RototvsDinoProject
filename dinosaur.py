@@ -9,4 +9,4 @@ class Dinosaur:
   def attack(self, robot):
     self.robot = robot
     print("You hit for 25 damage with your claw")
-    robot.health -= 25
+    
