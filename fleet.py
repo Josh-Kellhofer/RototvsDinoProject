@@ -3,10 +3,15 @@ from robot import Robot
 class Fleet:
 
   def __init__(self):
-      self.fleet_list = [Bob, Mech_Godzilla, Terminator]
+      self.fleet_list = []
+      self.create_fleet()
+
+  def create_fleet(self):
+    self.fleet_list.append(Robot("Bob", 120))
+    self.fleet_list.append(Robot("Mecha-Godzilla", 75))
+    self.fleet_list.append(Robot("Terminator", 90))
+
 
  
-Bob = Robot("Bob", 120)
-Mech_Godzilla = Robot("Mecha-Godzilla", 75)
-Terminator = Robot("Terminator", 90)
+
 

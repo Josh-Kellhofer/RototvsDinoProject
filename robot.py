@@ -8,7 +8,7 @@ class Robot:
     self.weapon = Weapon("stapler", 25)
 
   def attack(self, dinosaur):
-    self.dinosaur = dinosaur
+    dinosaur.health -= self.weapon.attack_power
     print("You hit for 25 damage with your stapler\n")
     
 

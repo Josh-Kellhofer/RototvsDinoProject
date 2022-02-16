@@ -7,6 +7,6 @@ class Dinosaur:
     
 
   def attack(self, robot):
-    self.robot = robot
+    robot.health -= self.attack_power
     print("You hit for 25 damage with your claw\n")
     
